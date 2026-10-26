@@ -21,10 +21,27 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.1.9">
-    <!-- Every dependency resolves from the official Kodi (Omega) repository. -->
+<addon id="service.az2music.helper" name="Arctic Zephyr 2: Music Edition Helper" version="0.1.0" provider-name="DiscoRage">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Background helper for Arctic Zephyr 2: Music Edition.</summary>
+        <description lang="en_GB">Opens the Now Playing screen when you start music. Installed automatically with the skin.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.2.0">
+    <!-- Dependencies come from the official Kodi (Omega) repository, plus our own helper service. -->
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
+        <import addon="service.az2music.helper" version="0.1.0" />
         <import addon="script.skinshortcuts"/>
         <import addon="script.skinvariables" version="2.1.28" />
         <import addon="plugin.video.themoviedb.helper" version="5.4.16" />

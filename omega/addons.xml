@@ -21,4 +21,32 @@
         </assets>
     </extension>
 </addon>
+<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.1.0">
+    <!-- Every dependency resolves from the official Kodi (Omega) repository. -->
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+        <import addon="script.skinshortcuts"/>
+        <import addon="script.skinvariables" version="2.1.28" />
+        <import addon="plugin.video.themoviedb.helper" version="5.4.16" />
+        <import addon="resource.images.studios.white"/>
+        <import addon="resource.images.moviegenreicons.transparent"/>
+        <import addon="resource.images.weathericons.white"/>
+        <import addon="resource.images.moviecountryicons.maps"/>
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false" defaultthemename="Textures.xbt" effectslowdown="1">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">A music-first Arctic Zephyr 2, with full video support.</summary>
+        <description lang="en_GB">Arctic Zephyr 2: Music Edition is a music-first version of Arctic Zephyr 2 for Kodi 21. It is based on Arctic Zephyr 2: Resurrection by DenDyGH and heppen, which builds on Arctic Zephyr 2 by jurialmunkey as ported to Kodi 19 by pkscout. Video playback and libraries work as in Resurrection.</description>
+        <disclaimer lang="en_GB">Work in progress: test builds may change or break without notice.</disclaimer>
+        <platform>all</platform>
+        <license>CC-BY-NC-SA-4.0</license>
+        <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 </addons>

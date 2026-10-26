@@ -21,7 +21,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="service.az2music.helper" name="Arctic Zephyr 2: Music Edition Helper" version="0.1.0" provider-name="DiscoRage">
+<addon id="service.az2music.helper" name="Arctic Zephyr 2: Music Edition Helper" version="0.1.1" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>

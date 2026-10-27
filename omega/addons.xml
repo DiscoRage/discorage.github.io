@@ -21,7 +21,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.az2music.wall" name="Arctic Zephyr 2: Music Edition Artist Wall" version="0.1.0" provider-name="DiscoRage">
+<addon id="script.az2music.wall" name="Arctic Zephyr 2: Music Edition Artist Wall" version="0.1.1" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -39,7 +39,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.4.1">
+<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.4.2">
     <!-- Every dependency resolves from the official Kodi (Omega) repository. -->
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />

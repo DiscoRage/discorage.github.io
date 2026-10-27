@@ -21,7 +21,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.2.5">
+<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.2.6">
     <!-- Every dependency resolves from the official Kodi (Omega) repository. -->
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />

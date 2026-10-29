@@ -21,16 +21,17 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.az2music.wall" name="Arctic Zephyr 2: Music Edition Artist Wall" version="0.1.11" provider-name="DiscoRage">
+<addon id="script.az2music.wall" name="Arctic Zephyr 2: Music Edition Artist Wall" version="0.1.12" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
+        <import addon="script.module.pil" version="1.1.7" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides></provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Lays out artists for the Artist Wall view.</summary>
-        <description lang="en_GB">Helper for Arctic Zephyr 2: Music Edition. Lists the artists in the current music library folder as columns, in alphabetical order, for the skin's Artist Wall view, and describes an album's audio (format, sample rate, channels, Atmos) for the album views. It has no settings and nothing to open on its own.</description>
+        <description lang="en_GB">Helper for Arctic Zephyr 2: Music Edition. Lists the artists in the current music library folder as columns, in alphabetical order, for the skin's Artist Wall view, describes an album's audio (format, sample rate, channels, Atmos) for the album views, and gives Now Playing its album colour, blurred background and track list. It has no settings and nothing to open on its own.</description>
         <platform>all</platform>
         <license>CC-BY-NC-SA-4.0</license>
         <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
@@ -39,13 +40,13 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.5.28">
+<addon id="skin.az2music" name="Arctic Zephyr 2: Music Edition" provider-name="DiscoRage, DenDyGH, heppen, pkscout, jurialmunkey" version="0.5.29">
     <!-- Every dependency resolves from the official Kodi (Omega) repository. -->
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts"/>
         <import addon="script.skinvariables" version="2.1.28" />
-        <import addon="script.az2music.wall" version="0.1.11" />
+        <import addon="script.az2music.wall" version="0.1.12" />
         <import addon="plugin.video.themoviedb.helper" version="5.4.16" />
         <import addon="resource.images.studios.white"/>
         <import addon="resource.images.moviegenreicons.transparent"/>

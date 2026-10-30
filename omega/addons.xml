@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="metadata.album.minimalist" name="Minimalist (albums)" version="0.1.0" provider-name="DiscoRage">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+        <import addon="xbmc.metadata" version="2.1.0" />
+        <import addon="script.az2music.scraper" version="0.1.1" />
+        <import addon="script.module.pil" version="1.1.7" />
+    </requires>
+    <extension point="xbmc.metadata.scraper.albums" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Year, genre and the largest cover for albums, nothing else.</summary>
+        <description lang="en_GB">The Minimalist Scraper's rules for Kodi's own scans: choose it under Settings &gt; Media &gt; Music. Names stay as tagged, a year or genre is only filled when the tags have none, and nothing else is fetched: no biographies, reviews, moods, styles or MusicBrainz release IDs (an album gets only its release group, which every edition shares). Looks albums up on TheAudioDB first, then MusicBrainz; covers also from Apple Music, and fanart.tv with the key set in Minimalist Scraper's settings.</description>
+        <platform>all</platform>
+        <license>CC-BY-NC-SA-4.0</license>
+        <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="metadata.artists.minimalist" name="Minimalist (artists)" version="0.1.0" provider-name="DiscoRage">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+        <import addon="xbmc.metadata" version="2.1.0" />
+        <import addon="script.az2music.scraper" version="0.1.1" />
+        <import addon="script.module.pil" version="1.1.7" />
+    </requires>
+    <extension point="xbmc.metadata.scraper.artists" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Genre, the largest photo and fanart for artists, nothing else.</summary>
+        <description lang="en_GB">The Minimalist Scraper's rules for Kodi's own scans: choose it under Settings &gt; Media &gt; Music. Names stay as tagged, a year or genre is only filled when the tags have none, and nothing else is fetched: no biographies, reviews, moods, styles or MusicBrainz release IDs (an album gets only its release group, which every edition shares). Looks albums up on TheAudioDB first, then MusicBrainz; covers also from Apple Music, and fanart.tv with the key set in Minimalist Scraper's settings.</description>
+        <platform>all</platform>
+        <license>CC-BY-NC-SA-4.0</license>
+        <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
 <addon id="repository.az2music" name="Arctic Zephyr 2: Music Edition Repository" version="1.0.0" provider-name="DiscoRage">
     <extension point="xbmc.addon.repository" name="Arctic Zephyr 2: Music Edition Repository">
         <!-- Kodi 21 (Omega). A Kodi 22 (Piers) <dir> can be added alongside later. -->
@@ -21,7 +59,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.az2music.scraper" name="Minimalist Scraper" version="0.1.0" provider-name="DiscoRage">
+<addon id="script.az2music.scraper" name="Minimalist Scraper" version="0.1.1" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.pil" version="1.1.7" />
@@ -31,7 +69,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Year, genre and the largest artwork for your music library, nothing else.</summary>
-        <description lang="en_GB">Fills in album year and genre where the library has none, and gives albums and album artists the largest artwork it can find (Apple Music, TheAudioDB, fanart.tv). Names always stay as tagged, and nothing else is fetched: no biographies, reviews, moods or MusicBrainz release IDs. Albums it can't find are kept for you to search again or skip. A one-time cleaner removes biographies, reviews, moods, styles and release IDs already in the library. Use it instead of Kodi's own album and artist scrapers.</description>
+        <description lang="en_GB">Fills in album year and genre where the library has none, and gives albums and album artists the largest artwork it can find (Apple Music, TheAudioDB, fanart.tv). Names always stay as tagged, and nothing else is fetched: no biographies, reviews, moods or MusicBrainz release IDs. Albums it can't find are kept for you to search again or skip. A one-time cleaner removes biographies, reviews, moods, styles and release IDs already in the library. For Kodi's own scans, install Minimalist (albums) and Minimalist (artists) and choose them under Settings &gt; Media &gt; Music.</description>
         <platform>all</platform>
         <license>CC-BY-NC-SA-4.0</license>
         <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>

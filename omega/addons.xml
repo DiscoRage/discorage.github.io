@@ -57,6 +57,24 @@
         </assets>
     </extension>
 </addon>
+<addon id="script.az2music.scraper" name="Minimalist Library Cleaner" version="0.2.0" provider-name="DiscoRage">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Clears biographies, reviews, moods, styles and release IDs out of the music library, once.</summary>
+        <description lang="en_GB">A one-time clean for a library scraped by Kodi's own scrapers: removes album reviews, artist biographies, moods, styles, themes, instruments and MusicBrainz release IDs (which split albums). Release groups and artist MusicBrainz IDs stay, as they find artwork. The music database is backed up first, and albums still listed twice are listed at the end. It then offers to make the Minimalist Album and Artist Scrapers Kodi's scrapers, so none of it comes back.</description>
+        <platform>all</platform>
+        <license>CC-BY-NC-SA-4.0</license>
+        <source>https://github.com/DiscoRage/Arctic-Zephyr-2-Music-Edition</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
 <addon id="script.az2music.wall" name="Arctic Zephyr 2: Music Edition Artist Wall" version="0.1.13" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />

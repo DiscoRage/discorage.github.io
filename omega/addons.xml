@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="metadata.album.minimalist" name="Minimalist (albums)" version="0.1.0" provider-name="DiscoRage">
+<addon id="metadata.album.minimalist" name="Minimalist (albums)" version="0.1.1" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="xbmc.metadata" version="2.1.0" />
-        <import addon="script.az2music.scraper" version="0.1.1" />
+        <import addon="script.az2music.scraper" version="0.1.2" />
         <import addon="script.module.pil" version="1.1.7" />
     </requires>
     <extension point="xbmc.metadata.scraper.albums" library="default.py" />
@@ -19,11 +19,11 @@
         </assets>
     </extension>
 </addon>
-<addon id="metadata.artists.minimalist" name="Minimalist (artists)" version="0.1.0" provider-name="DiscoRage">
+<addon id="metadata.artists.minimalist" name="Minimalist (artists)" version="0.1.1" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="xbmc.metadata" version="2.1.0" />
-        <import addon="script.az2music.scraper" version="0.1.1" />
+        <import addon="script.az2music.scraper" version="0.1.2" />
         <import addon="script.module.pil" version="1.1.7" />
     </requires>
     <extension point="xbmc.metadata.scraper.artists" library="default.py" />
@@ -59,7 +59,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="script.az2music.scraper" name="Minimalist Scraper" version="0.1.1" provider-name="DiscoRage">
+<addon id="script.az2music.scraper" name="Minimalist Scraper" version="0.1.2" provider-name="DiscoRage">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.pil" version="1.1.7" />
